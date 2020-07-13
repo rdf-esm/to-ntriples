@@ -1,7 +1,2 @@
-const quad = require('./lib/quad')
-const term = require('./lib/term')
-
-module.exports = {
-  quadToNTriples: quad,
-  termToNTriples: term
-}
+export { quad as quadToNTriples } from './lib/quad.js'
+export { term as termToNTriples } from './lib/term.js'

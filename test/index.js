@@ -1,18 +1,18 @@
 /* global describe, it */
 
-const assert = require('assert')
-const quad = require('../lib/quad')
-const term = require('../lib/term')
-const lib = require('..')
+import assert from 'assert'
+import { quad } from '../lib/quad.js'
+import { term } from '../lib/term.js'
+import * as lib from '../index.js'
 
 describe('to-ntriples', () => {
   it('should expose quadToNTriples', () => {
-    assert.equal(typeof lib.quadToNTriples, 'function')
-    assert.equal(quad, lib.quadToNTriples)
+    assert.strictEqual(typeof lib.quadToNTriples, 'function')
+    assert.strictEqual(quad, lib.quadToNTriples)
   })
 
   it('should expose termToNTriples', () => {
-    assert.equal(typeof lib.termToNTriples, 'function')
-    assert.equal(term, lib.termToNTriples)
+    assert.strictEqual(typeof lib.termToNTriples, 'function')
+    assert.strictEqual(term, lib.termToNTriples)
   })
 })

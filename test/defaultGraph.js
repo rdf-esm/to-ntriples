@@ -1,15 +1,15 @@
 /* global describe, it */
 
-const assert = require('assert')
-const defaultGraph = require('../lib/defaultGraph')
-const rdf = require('@rdfjs/data-model')
+import assert from 'assert'
+import { defaultGraph } from '../lib/defaultGraph.js'
+import * as rdf from '@rdf-esm/data-model'
 
 describe('defaultGraph', () => {
   it('should be a function', () => {
-    assert.equal(typeof defaultGraph, 'function')
+    assert.strictEqual(typeof defaultGraph, 'function')
   })
 
   it('should convert a Default Graph to a N-Triples string', () => {
-    assert.equal(defaultGraph(rdf.defaultGraph()), '')
+    assert.strictEqual(defaultGraph(rdf.defaultGraph()), '')
   })
 })

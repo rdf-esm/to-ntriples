@@ -1,17 +1,17 @@
 /* global describe, it */
 
-const assert = require('assert')
-const blankNode = require('../lib/blankNode')
-const rdf = require('@rdfjs/data-model')
+import assert from 'assert'
+import { blankNode } from '../lib/blankNode.js'
+import * as rdf from '@rdf-esm/data-model'
 
 describe('blankNode', () => {
   it('should be a function', () => {
-    assert.equal(typeof blankNode, 'function')
+    assert.strictEqual(typeof blankNode, 'function')
   })
 
   it('should convert a Blank Node to a N-Triples string', () => {
     const node = rdf.blankNode()
 
-    assert.equal(blankNode(node), `_:${node.value}`)
+    assert.strictEqual(blankNode(node), `_:${node.value}`)
   })
 })
