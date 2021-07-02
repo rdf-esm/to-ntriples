@@ -1,4 +1,3 @@
-import { Quad, Term } from 'rdf-js'
+import {Term, DatasetCore} from '@rdfjs/types';
 
-export function quadToNTriples(quad: Quad): string
-export function termToNTriples(quad: Term): string
+export function toNT(quad: Term | DatasetCore): string

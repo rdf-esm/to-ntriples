@@ -30,7 +30,7 @@
   "homepage": "https://github.com/rdf-esm/to-ntriples",
   "dependencies": {},
   "devDependencies": {
-    "@types/rdf-js": "^3.0.3",
+    "@rdfjs/types": "^1.0.1",
     "@rdf-esm/data-model": "^0.5.1",
     "c8": "^7.1.2",
     "mocha": "^8.0.1",
