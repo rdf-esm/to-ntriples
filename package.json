@@ -28,7 +28,9 @@
     "url": "https://github.com/rdf-esm/to-ntriples/issues"
   },
   "homepage": "https://github.com/rdf-esm/to-ntriples",
-  "dependencies": {},
+  "dependencies": {
+    "@rdfjs/to-ntriples": "^2.0.0"
+  },
   "devDependencies": {
     "@rdfjs/types": "^1.0.1",
     "@rdf-esm/data-model": "^0.5.1",
