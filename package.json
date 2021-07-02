@@ -1,6 +1,6 @@
 {
   "name": "@rdf-esm/to-ntriples",
-  "version": "0.0.0",
+  "version": "0.6.0",
   "description": "Converts RDF/JS Terms, Quads and Datasets to N-Triple strings",
   "main": "index.js",
   "type": "module",
